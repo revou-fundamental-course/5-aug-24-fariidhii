@@ -1,24 +1,31 @@
+// Menunggu DOM selesai dimuat sebelum menjalankan script
 document.addEventListener('DOMContentLoaded', function() {
+    // Mengambil elemen form dan div hasil
     const form = document.querySelector('.form1');
     const hasilDiv = document.getElementById('hasil');
 
+    // Menambahkan event listener untuk submit form
     form.addEventListener('submit', function(e) {
         e.preventDefault();
 
+        // Mengambil nilai input dari form
         const jenisKelamin = document.querySelector('input[name="jenis-kelamin"]:checked');
         const usia = document.getElementById('usia').value;
         const beratBadan = document.getElementById('berat-badan').value;
         const tinggiBadan = document.getElementById('tinggi-badan').value;
 
+        // Validasi input
         if (!jenisKelamin || !usia || !beratBadan || !tinggiBadan) {
             alert('Mohon isi semua data');
             return;
         }
 
+        // Menghitung BMI
         const tinggiMeter = tinggiBadan / 100;
         const bmi = beratBadan / (tinggiMeter * tinggiMeter);
         const kategori = getKategoriBMI(bmi);
 
+        // Menampilkan hasil perhitungan
         hasilDiv.innerHTML = `
             <h2>Hasil Perhitungan BMI</h2>
             <p>Jenis Kelamin: ${jenisKelamin.value}</p>
@@ -29,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     });
 
+    // Fungsi untuk menentukan kategori BMI
     function getKategoriBMI(bmi) {
         if (bmi < 18.5) return `
         Berat Badan Kurang 
@@ -67,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return 'Obesitas';
     }
 
+    // Menambahkan event listener untuk tombol reset
     const resetButton = form.querySelector('button:last-child');
     resetButton.addEventListener('click', function(e) {
         e.preventDefault();

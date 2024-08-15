@@ -1,134 +1,219 @@
-body{
+/* Mengatur margin dan font untuk seluruh body */
+body {
     margin: 0px;
+    /* Menghilangkan margin default */
     font-family: Arial, Helvetica, sans-serif;
+    /* Mengatur jenis font */
 }
 
-main{
+/* Mengatur tampilan untuk elemen main */
+main {
     display: flex;
+    /* Menggunakan flexbox untuk tata letak */
 }
 
-.form1{
+/* Mengatur tampilan untuk elemen dengan kelas form1 */
+.form1 {
     background-color: lightblue;
+    /* Mengatur warna latar belakang */
     padding: 10px;
+    /* Menambahkan ruang dalam */
 }
 
-.form2{
+/* Mengatur tampilan untuk elemen dengan kelas form2 */
+.form2 {
     background-color: lightgray;
+    /* Mengatur warna latar belakang */
     text-align: center;
+    /* Mengatur teks ke tengah */
     width: 550px;
+    /* Mengatur lebar */
     height: 200px;
+    /* Mengatur tinggi */
     margin-top: 20px;
+    /* Menambahkan margin atas */
 }
 
-h2{
+/* Mengatur tampilan untuk elemen h2 */
+h2 {
     padding-top: 10px;
+    /* Menambahkan ruang di atas */
 }
 
-.header{
+/* Mengatur tampilan untuk elemen dengan kelas header */
+.header {
     display: flex;
-    justify-content:baseline;
+    /* Menggunakan flexbox */
+    justify-content: baseline;
+    /* Mengatur perataan item flex */
     background-color: black;
+    /* Mengatur warna latar belakang */
     color: white;
+    /* Mengatur warna teks */
     gap: 525px;
+    /* Mengatur jarak antar item flex */
     padding-left: 200px;
+    /* Menambahkan ruang di kiri */
 }
 
-button{
+/* Mengatur tampilan untuk elemen button */
+button {
     background-color: blue;
+    /* Mengatur warna latar belakang */
     border: 0px;
+    /* Menghilangkan border */
     color: white;
+    /* Mengatur warna teks */
     width: 110px;
+    /* Mengatur lebar */
     height: 30px;
+    /* Mengatur tinggi */
     border-radius: 5px;
+    /* Mengatur sudut melengkung */
     font-size: 17px;
+    /* Mengatur ukuran font */
     margin-bottom: 10px;
+    /* Menambahkan margin bawah */
 }
 
-button:hover{
+/* Mengatur tampilan saat kursor di atas button */
+button:hover {
     color: black;
+    /* Mengubah warna teks saat hover */
 }
 
-.ukuran{
+/* Mengatur tampilan untuk elemen dengan kelas ukuran */
+.ukuran {
     width: 500px;
+    /* Mengatur lebar */
     height: 20px;
+    /* Mengatur tinggi */
 }
 
-label{
-    font-size: 17px ;
+/* Mengatur tampilan untuk elemen label */
+label {
+    font-size: 17px;
+    /* Mengatur ukuran font */
 }
 
-.aside{
+/* Mengatur tampilan untuk elemen dengan kelas aside */
+.aside {
     padding: 20px;
+    /* Menambahkan ruang dalam */
     width: 600px;
+    /* Mengatur lebar */
 }
 
-.reset{
+/* Mengatur tampilan untuk elemen dengan kelas reset */
+.reset {
     font-size: 30px;
-    text-align:center;
+    /* Mengatur ukuran font */
+    text-align: center;
+    /* Mengatur teks ke tengah */
     margin-top: 0px;
+    /* Menghilangkan margin atas */
     padding: 80px;
+    /* Menambahkan ruang dalam */
 }
 
-.tulisan1{
+/* Mengatur tampilan untuk elemen dengan kelas tulisan1 */
+.tulisan1 {
     padding-top: 10px;
-    text-align:left;
-
+    /* Menambahkan ruang di atas */
+    text-align: left;
+    /* Mengatur teks ke kiri */
 }
 
-.form3{
+/* Mengatur tampilan untuk elemen dengan kelas form3 */
+.form3 {
     background-color: blue;
+    /* Mengatur warna latar belakang */
     border-radius: 10px;
+    /* Mengatur sudut melengkung */
     color: white;
+    /* Mengatur warna teks */
     width: 250px;
+    /* Mengatur lebar */
     height: 30px;
+    /* Mengatur tinggi */
     font-size: 15px;
+    /* Mengatur ukuran font */
 }
 
-.form3:hover{
+/* Mengatur tampilan saat kursor di atas elemen dengan kelas form3 */
+.form3:hover {
     color: black;
+    /* Mengubah warna teks saat hover */
 }
 
-@media screen and (max-width: 458px){
-    main{
+/* Mengatur tampilan untuk layar dengan lebar maksimum 458px */
+@media screen and (max-width: 458px) {
+
+    /* Mengubah tata letak main menjadi kolom */
+    main {
         flex-direction: column;
     }
-    
-    .h1{
+
+    /* Mengatur posisi dan tampilan elemen dengan kelas h1 */
+    .h1 {
         position: absolute;
+        /* Mengatur posisi absolut */
         left: 125px;
+        /* Mengatur jarak dari kiri */
         top: 1135px;
+        /* Mengatur jarak dari atas */
         color: black;
+        /* Mengatur warna teks */
         margin-top: 40px;
+        /* Menambahkan margin atas */
     }
 
-    .header{
+    /* Menyesuaikan tampilan header untuk layar kecil */
+    .header {
         gap: 0px;
+        /* Menghilangkan jarak antar item flex */
         padding-left: 65px;
+        /* Mengurangi ruang di kiri */
     }
 
-    body{
+    /* Mengubah warna latar belakang body */
+    body {
         background-color: white;
     }
 
-    .aside{
+    /* Menyesuaikan ukuran dan padding untuk elemen dengan kelas aside */
+    .aside {
         width: 280px;
+        /* Mengurangi lebar */
         padding: 10px;
+        /* Mengurangi ruang dalam */
     }
 
-    .ukuran{
+    /* Menyesuaikan lebar elemen dengan kelas ukuran */
+    .ukuran {
         width: 200px;
+        /* Mengurangi lebar */
     }
 
-    .form2{
+    /* Menyesuaikan tampilan elemen dengan kelas form2 */
+    .form2 {
         margin-top: 50px;
+        /* Menambah margin atas */
         width: 280px;
+        /* Mengurangi lebar */
     }
 
-    .reset{
+    /* Menyesuaikan tampilan elemen dengan kelas reset */
+    .reset {
         font-size: 20px;
+        /* Mengurangi ukuran font */
         width: 100px;
-        text-align:center;
+        /* Mengurangi lebar */
+        text-align: center;
+        /* Mengatur teks ke tengah */
         padding-top: 80px;
+        /* Menambah ruang di atas */
         padding-left: 95px;
+        /* Menambah ruang di kiri */
     }
-}    
+}

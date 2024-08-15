@@ -2,16 +2,18 @@
 <html>
 
 <head>
+    <!-- Pengaturan karakter encoding dan viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Test 1</title>
+    <!-- Menghubungkan file CSS eksternal -->
     <link rel="stylesheet" href="css/stylesheet.css">
 
 </head>
 
 <body>
+    <!-- Menghubungkan file JavaScript eksternal -->
     <script src="js/script.js"></script>
-
     <div class="header">
         <aside>
             <h1>Kalkulator BMI</h1>
@@ -26,31 +28,36 @@
     <main>
         <aside class="aside">
             <article>
+                <!-- Penjelasan tentang berat badan ideal -->
                 <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki
                     bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan
                     kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang
                     di kalkulator bmi </p>
             </article>
 
+            <!-- Form input data untuk menghitung BMI -->
             <form class="form1">
                 <div>
+                    <!-- Input jenis kelamin -->
                     <h3>Jenis Kelamin</h3>
                     <input type="radio" id="pria" name="jenis-kelamin" value="Pria"><label for="pria">Pria</label>
                     <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan"><label
                         for="perempuan">Perempuan</label>
 
+                    <!-- Input usia -->
                     <h3>Usia</h3>
                     <input class="ukuran" id="usia" type="number" placeholder="Th">
 
+                    <!-- Input berat badan -->
                     <h3>Berat Badan</h3>
                     <input class="ukuran" type="number" id="berat-badan" placeholder="Kg">
 
-
-
+                    <!-- Input tinggi badan -->
                     <h3>Tinggi Badan</h3>
                     <input class="ukuran" type="number" id="tinggi-badan" placeholder="Cm">
                 </div>
 
+                <!-- Tombol submit dan reset -->
                 <div>
                     <br>
                     <button type="submit">Hitung BMI</button>
@@ -58,8 +65,8 @@
                 </div>
             </form>
 
+            <!-- Informasi tambahan tentang fitur dan penggunaan kalkulator BMI -->
             <h2>Keunggulan Fitur</h2>
-
             <article>
                 <p>
                     1.Menghitung Berat Badan
@@ -82,6 +89,7 @@
             </article>
         </aside>
 
+        <!-- Bagian kanan halaman untuk menampilkan hasil -->
         <aside class="aside">
             <section>
                 <form class="form2">
